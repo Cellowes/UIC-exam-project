@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tailwind.config.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-bgSariq">
+    <div>
+
+    </div>
+    <header class="flex justify-center relative mt-[50px]">
+        <img src="images/pokemon_logo 1.svg" alt="logo" class="lg:w-[610px] lg:h-[225px] md:w-[510px] md:h-[125px] w-[310px]">
+        <div class="lg:pl-headerHeartSpacing pl-[55%] mt-1 absolute">
+        <i class="likeBtn fa-regular fa-heart text-[50px]"></i>
+    </div>
+    </header>
+    <section class="flex mt-headerAndSectionSpacing items-center justify-center gap-headerElementSpacing md:mx-10" >
+        <div
+            class="w-headerElementWidth h-headerElementHeight py-4 bg-white text-center rounded-2xl border-2 border-black font-roboto font-bold text-2xl flex items-center justify-center gap-[17px]">
+            <p>Gross</p>
+            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+        </div>
+
+        <div
+            class="w-searchElementWidth h-headerElementHeight py-4 bg-white text-center rounded-2xl border-2 border-black font-roboto font-bold text-2xl flex items-center justify-between pr-searchIconSpacing pl-searchTextSpacing">
+            <p>Search</p>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div
+            class="w-headerElementWidth h-headerElementHeight py-4 bg-white text-center rounded-2xl border-2 border-black font-roboto font-bold text-2xl flex items-center justify-center gap-[17px]">
+            <p>Aa-Zz</p>
+            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+        </div>
+
+        <button
+            class="w-buttonElementWidth h-headerElementHeight py-4 bg-white text-center rounded-2xl border-2 border-black font-roboto font-bold text-2xl flex items-center justify-center gap-[17px]">
+            Button
+        </button>
+    </section>
+
+    <!-- HTML section finished, let's begin JS works -->
+
+    <div class="elBlock container mx-auto flex flex-wrap items-center justify-center gap-searchIconSpacing mt-sectionMargin "></div>
+
+
+
+
+
+<script src="pokemons.js"></script>
+    <script src="./index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgSariq: '#FFD845',
+                    },
+                    fontFamily: {
+                        roboto: ['Roboto', 'sans-serif'],
+                    },
+                    fontWeight: {
+                        medium: 500,
+                        bold: 700,
+                    },
+                    spacing: {
+                        'headerHeartSpacing': '914px',
+                        'searchElementWidth': '300px',
+                        'headerElementWidth': '260px',
+                        'buttonElementWidth': '200px',
+                        'sectionMargin': '100px',
+                        'headerAndSectionSpacing': '70px',
+                        'headerElementHeight': '60px',
+                        'headerElementSpacing': '35px',
+                        'searchIconSpacing': '30px',
+                        'searchTextSpacing': '29px',
+
+                    }
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
